@@ -1,0 +1,15 @@
+{
+  "name": "Lepra Noreplace",
+  "version": "0.2",
+  "permissions": [
+    "http://leprosorium.ru/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["http://leprosorium.ru/*"],
+      "js": ["noreplace.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "manifest_version": 2
+}
